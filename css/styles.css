@@ -111,6 +111,19 @@ img {
 .first-section {
   background-color: #2e2f42;
   padding: 188px 0;
+
+  background-color: GREY;
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/peopleoffice.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-origin: padding-box;
+  background-clip: padding-box;
 }
 .first-title {
   font-size: 56px;
@@ -229,6 +242,9 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
 }
+.team-list {
+  display: flex;
+}
 /* Секція 4 */
 .four-section {
   padding: 120px 0;
@@ -275,6 +291,9 @@ img {
 .foot {
   background-color: #2e2f42;
   padding: 100px 0;
+}
+.foot-container {
+  display: flex;
 }
 .web {
   color: var(--iris, #4d5ae5);
