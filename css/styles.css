@@ -375,3 +375,14 @@ img {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
+.foot-container-two {
+  margin-left: 120px;
+}
+.foot-two-text {
+  color: var(--WHITE, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
