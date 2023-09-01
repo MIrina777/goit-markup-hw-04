@@ -245,6 +245,11 @@ img {
   align-items: center;
   justify-content: center;
 }
+.third-list-link:hover,
+.third-list-link:focus {
+  background-color: #404bbf;
+}
+
 .third-list-icon {
   fill: #f4f4fd;
 }
