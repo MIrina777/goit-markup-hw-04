@@ -38,6 +38,8 @@ img {
 /* Шапка веб-сторінки */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .page-container {
   display: flex;
@@ -70,10 +72,27 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
-}
-.webstudio {
   text-decoration: none;
 }
+.page-item {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.current {
+  position: relative;
+  color: #404bbf;
+}
+.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  width: 48px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  margin: 20;
+}
+
 .webstudio:hover,
 .webstudio:focus {
   color: #404bbf;
@@ -101,6 +120,7 @@ img {
   text-decoration: none;
   list-style-type: none;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address:hover,
 .address:focus {
